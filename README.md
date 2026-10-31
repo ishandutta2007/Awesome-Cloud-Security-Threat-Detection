@@ -1,52 +1,48 @@
-# Awesome-Cloud-Security-Threat-Detection
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Cloud Security Threat Detection Banner" width="100%" />
+</p>
 
-# Awesome-Cloud-Security-Threat-Detection
+# 🛡️ Awesome Cloud Security Threat Detection
 
-**Top Cloud Security Threat Detection (Opensource) 🌟 Star if you like it! 🌟**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Security-Threat-Detection/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Security-Threat-Detection?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Security-Threat-Detection/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Security-Threat-Detection?style=social" alt="GitHub Forks" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+> 🔍 **A curated list of top SaaS platforms and open-source GitHub projects for Cloud Security, Cloud-Native Application Protection Platforms (CNAPP), Runtime Threat Detection, Multi-Cloud Posture Management (CSPM), and Cloud SIEM & XDR.**
 
+---
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+## 📌 Table of Contents
 
-*Focused on CNAPP, Runtime Threat Detection, CSPM, Cloud SIEM & Self-Hosted Security Operations*
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🧩 Building a Composable Open-Source Cloud Security Stack](#-building-a-composable-open-source-cloud-security-stack)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-**Last updated: October 2026**
+---
 
+## 🌐 Sector Overview & Market Dynamics
 
+The global **Cloud Security** and **Cloud-Native Application Protection Platform (CNAPP)** market is projected to reach approximately **$45B to $48B+** in 2026 (with the standalone CNAPP segment expanding between **$12.6B and $17.8B** at an accelerated 19–22.5% CAGR). 
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud Security & Threat Detection**. These tools enable organizations to detect threats across cloud workloads, containers, and identities, correlate security events, and respond to incidents—from fully managed CNAPP platforms with agentless scanning and unified graphs to self-hosted scanners and runtime sensors that give security teams complete control over their detection pipelines.
+While the ecosystem historically emerged as a highly fragmented landscape of siloed point solutions (disparate CSPM, CWPP, and CIEM scanners), it is rapidly consolidating into a **moderately-to-highly concentrated market** dominated by integrated platform consolidators and cybersecurity conglomerates executing winner-take-most platform plays.
 
+---
 
+## 🏢 SaaS & Hosted Platforms
 
-**Examples** include Wiz, CrowdStrike Falcon, Microsoft Defender for Cloud, Palo Alto Prisma Cloud, Datadog Security, SentinelOne, Sysdig, Lacework (FortiCNAPP), Orca Security, and Atlassian Guard (the category leaders in commercial space).
+A comprehensive comparison of category-leading commercial cloud threat detection and CNAPP platforms, sorted in descending order by parent company market capitalization or valuation:
 
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted cloud security, runtime detection, and open posture management. **Critical note**: No single open-source project replicates the full scope of Wiz or CrowdStrike Falcon. The open-source landscape is **composable**: **Falco** dominates runtime detection , **Prowler** handles multi-cloud CSPM , **Magpie** provides a lightweight CSPM alternative , and newer projects like **container-runtime-security** offer eBPF-based enforcement with AI triage . You assemble the stack based on your gaps.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-
-
-## Sector Overview & Market Dynamics
-
-The global Cloud Security and Cloud-Native Application Protection Platform (CNAPP) market is projected to reach approximately **$45B to $48B+** in 2026 (with the standalone CNAPP segment expanding between **$12.6B and $17.8B** at a 19–22.5% CAGR). While the space historically emerged as a highly fragmented landscape of siloed point tools (disparate CSPM, CWPP, and CIEM scanners), it is rapidly consolidating into a **moderately-to-highly concentrated market** dominated by end-to-end platform consolidators and cybersecurity conglomerates executing winner-take-most platform plays.
-
-## SaaS/Hosted Platforms
-
-| Platform | Market Cap / Valuation | Starting Pricing | Free Tier / Trial Limits | Key Capabilities & Workload Focus |
+| 🛡️ Platform | 💰 Market Cap / Valuation | 🏷️ Starting Pricing | 🎁 Free Tier / Trial Limits | ⚡ Key Capabilities & Workload Focus |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Microsoft Defender for Cloud](https://azure.microsoft.com/en-us/products/defender-for-cloud)** | ~$3.9T *(Market Cap)* | **$4.906/server/month** (Defender for Servers Plan 1; pay-as-you-go per resource) | **Free indefinitely** (Foundational CSPM); 30-day free trial per enhanced workload protection plan | Native Azure/multicloud protection with agentless & agent-based vulnerability scanning, posture, and CWPP. |
 | **[Palo Alto Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud)** | ~$280B *(Market Cap)* | **~$18,000/year** (baseline 100 enterprise credit bundle; credit consumption model) | **30-day proof-of-concept / evaluation** via AWS Marketplace private offer or sales | Comprehensive code-to-cloud CNAPP covering CSPM, CWPP, CIEM, API security, and runtime defense. |
@@ -59,9 +55,11 @@ The global Cloud Security and Cloud-Native Application Protection Platform (CNAP
 | **[Sysdig Secure](https://sysdig.com/)** | ~$2.5B *(Private Valuation)* | **$72/host/month** (CNAPP Enterprise list tier, typically 20-host minimum commitment) | **30-day free trial** available via direct signup or AWS/GCP Marketplace | Runtime threat detection and container security built on Falco, integrated with posture and vulnerability tools. |
 | **[Orca Security](https://orca.security/)** | ~$1.8B *(Private Valuation)* | **$7,000/month** (~$84,000/year minimum starter workload tier on AWS Marketplace) | **30-day free trial** (risk-free assessment available on AWS Marketplace) | Agentless SideScanning CNAPP covering CSPM, CWPP, CIEM, DSPM, API security, and AI workload posture. |
 
-## Open-Source GitHub Projects
+---
 
-Curated list of open-source tools for cloud security, runtime detection, CSPM, and posture enforcement, sorted by GitHub stars in descending order.
+## 💻 Open-Source GitHub Projects
+
+Curated open-source projects for self-hosted cloud security, runtime detection, CSPM, and posture enforcement, sorted by GitHub stars in descending order:
 
 - **[Trivy](https://github.com/aquasecurity/trivy)** [![GitHub stars](https://img.shields.io/github/stars/aquasecurity/trivy?style=social&color=white)](https://github.com/aquasecurity/trivy/stargazers)
   **Comprehensive security scanner** (Apache 2.0) — Scans container images, file systems, Git repositories, virtual machine images, Kubernetes clusters, and AWS environments for known vulnerabilities (CVEs), IaC misconfigurations, sensitive secrets, and SBOM licenses. CI/CD native and developer-friendly. **Tech stack**: Go. **Deploy**: CLI, Docker, Kubernetes Operator. **Best for**: Shift-left security pipelines and pre-deployment vulnerability/IaC verification.
@@ -99,61 +97,59 @@ Curated list of open-source tools for cloud security, runtime detection, CSPM, a
 - **[container-runtime-security](https://github.com/aiagentmackenzie-lang/container-runtime-security)** [![GitHub stars](https://img.shields.io/github/stars/aiagentmackenzie-lang/container-runtime-security?style=social&color=white)](https://github.com/aiagentmackenzie-lang/container-runtime-security/stargazers)
   **eBPF-based container runtime security monitoring & enforcement** — Feature-complete open-source runtime enforcement engine with 30 detection rules across 9 threat categories, TC-based network blocking, multi-signal correlation, and AI-assisted triage at ~73k events/sec throughput. **Tech stack**: Go, C (eBPF). **Deploy**: Kubernetes DaemonSet. **Best for**: Teams researching eBPF-native active enforcement and AI-augmented alert triage.
 
-### Building a Composable Open-Source Cloud Security Stack
+---
 
-While commercial CNAPP platforms (such as Wiz, Defender for Cloud, and CrowdStrike) provide a unified graph tying together posture, runtime, and identity, you can assemble a powerful self-hosted alternative by composing complementary open-source layers:
-- **Shift-Left & Pre-deployment**: [Trivy](https://github.com/aquasecurity/trivy) (vulnerabilities & secrets) + [Checkov](https://github.com/bridgecrewio/checkov) (IaC static analysis).
-- **Multi-Cloud Posture & Compliance**: [Prowler](https://github.com/prowler-cloud/prowler) (CIS benchmarks & audits) + [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) (automated posture policy enforcement).
-- **Cluster Governance**: [Gatekeeper](https://github.com/open-policy-agent/gatekeeper) + [Kubescape](https://github.com/kubescape/kubescape).
-- **Runtime Threat Detection**: [Falco](https://github.com/falcosecurity/falco) + [Tracee](https://github.com/aquasecurity/tracee).
-- **In-Kernel Enforcement**: [Tetragon](https://github.com/cilium/tetragon) + [container-runtime-security](https://github.com/aiagentmackenzie-lang/container-runtime-security).
-- **Unified SIEM / Event Correlation**: [Wazuh](https://github.com/wazuh/wazuh).
+### 🧩 Building a Composable Open-Source Cloud Security Stack
 
+While commercial CNAPP platforms (such as Wiz, Defender for Cloud, and CrowdStrike) provide an out-of-the-box unified graph tying together posture, runtime, and identity, you can build a comprehensive self-hosted alternative by assembling complementary open-source components:
 
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Cloud security platforms handling credentials and security telemetry must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls.
-
-- **The "unified CNAPP" vs. "runtime detection" vs. "CSPM" vs. "enforcement" distinction is critical.** **Wiz, CrowdStrike, Defender for Cloud, Prisma Cloud, Datadog, SentinelOne, Sysdig, Lacework, and Orca** are **commercial platforms**—they bundle multiple capabilities (CSPM, CWPP, CIEM, runtime) into one console. **Falco** is **runtime detection**—Kubernetes and container threats, not posture . **Prowler and Magpie** are **CSPM**—posture only . **container-runtime-security** is **runtime enforcement**—eBPF-based blocking with detection . **No single open-source project replaces a commercial CNAPP.** Compose the stack based on your gaps.
-
-- **Falco is the runtime detection standard**—CNCF Graduated, eBPF-based, with 50+ integrations and upstream status for Sysdig Secure . **Pair it with Prowler for posture** to approximate a CNAPP.
-
-- **Prowler is the most production-ready open-source CSPM** with CLI, Local Server, and Local Dashboard options . **Magpie is the lighter alternative** focused on ransomware and supply-chain threats, but has a much smaller community .
-
-- **container-runtime-security is the most ambitious open-source runtime enforcement project**—30 rules, 7-rule safety protocol, and AI triage at ~73k events/sec . **The trade-off**: runtime path pending verification; newer project. **For teams wanting enforcement (not just detection), it is the most feature-complete option to evaluate.**
-
-- **Pricing opacity varies.** CrowdStrike publishes per-device pricing ($7.99–$19.99/month) . SentinelOne publishes per-endpoint pricing ($179.99–$229.99/year) . Microsoft publishes resource-based pricing with free CSPM . Atlassian Guard Premium is $8.18/user/month . Wiz, Prisma Cloud, Datadog, Sysdig, Lacework, and Orca require sales contact. **Validate with direct vendor conversations against your cloud footprint and workload count.**
-
-- Self-hosted open-source solutions require proper infrastructure (Kubernetes for Falco, servers for Prowler), security hardening for scanner credentials, and ongoing maintenance. **Security platforms have privileged access to cloud environments**—ensure your deployment meets your organization's security standards before connecting production accounts.
-
-
+* 🛡️ **Shift-Left & Pre-deployment**: [Trivy](https://github.com/aquasecurity/trivy) (vulnerabilities & secrets) + [Checkov](https://github.com/bridgecrewio/checkov) (IaC static analysis)
+* ☁️ **Multi-Cloud Posture & Compliance**: [Prowler](https://github.com/prowler-cloud/prowler) (CIS benchmarks & audits) + [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) (automated posture policy enforcement)
+* ☸️ **Cluster Governance**: [Gatekeeper](https://github.com/open-policy-agent/gatekeeper) + [Kubescape](https://github.com/kubescape/kubescape)
+* 🔍 **Runtime Threat Detection**: [Falco](https://github.com/falcosecurity/falco) + [Tracee](https://github.com/aquasecurity/tracee)
+* 🛑 **In-Kernel Enforcement**: [Tetragon](https://github.com/cilium/tetragon) + [container-runtime-security](https://github.com/aiagentmackenzie-lang/container-runtime-security)
+* 📊 **Unified SIEM / Event Correlation**: [Wazuh](https://github.com/wazuh/wazuh)
 
 ---
 
+## 🤝 How to Contribute
 
+Contributions are welcome! To help keep this list up-to-date:
 
-**Made for cloud security engineers, SOC teams, and organizations building transparent cloud threat detection solutions.**
+1. 🍴 **Fork the repo**.
+2. ✍️ **Add or edit entries in `README.md`** (maintain existing tabular/bulleted formats, pricing precision, and star badge structures).
+3. 📝 **Include**: tool name, official link, 1–2 sentence description, license (for open-source), and whether it is SaaS or self-hosted.
+4. 🚀 **Submit a Pull Request** with a clear explanation of changes.
 
-Let's make Cloud Security & Threat Detection more open, data-driven, and runtime-aware.
+---
+
+## 💖 Support
+
+If you find this curated cloud security threat detection repository valuable, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and share** with your security teams, DevOps colleagues, and community.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance and research via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps this resource comprehensive, up-to-date, and open to the entire cloud security community! 🙌
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cloud-Security-Threat-Detection&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cloud-Security-Threat-Detection&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not a commercial endorsement.
+- Cloud security platforms handling credentials and telemetry must comply with corporate governance and data protection regulations (GDPR, HIPAA, SOC 2, CCPA).
+- **The "unified CNAPP" vs. "runtime detection" vs. "CSPM" vs. "enforcement" distinction is critical**: Commercial platforms bundle multiple capabilities into a unified console. Open-source solutions excel within focused domains (e.g., Falco for runtime, Prowler for CSPM, Tetragon for enforcement) and can be composed to fit customized organizational architectures.
+- Always validate vendor licensing, compute overhead, and trial terms against your specific multi-cloud footprint before deploying into production accounts.
+
+---
+
+<p align="center">
+  <b>Built for Cloud Security Engineers, DevSecOps, and SOC Teams 🚀</b>
+</p>
