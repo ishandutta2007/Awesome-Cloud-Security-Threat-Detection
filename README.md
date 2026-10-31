@@ -32,79 +32,32 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
 
 
+## Sector Overview & Market Dynamics
+
+The global Cloud Security and Cloud-Native Application Protection Platform (CNAPP) market is projected to reach approximately **$45B to $48B+** in 2026 (with the standalone CNAPP segment expanding between **$12.6B and $17.8B** at a 19–22.5% CAGR). While the space historically emerged as a highly fragmented landscape of siloed point tools (disparate CSPM, CWPP, and CIEM scanners), it is rapidly consolidating into a **moderately-to-highly concentrated market** dominated by end-to-end platform consolidators and cybersecurity conglomerates executing winner-take-most platform plays.
+
 ## SaaS/Hosted Platforms
 
-
-
-- **[Wiz](https://www.wiz.io/)**
-
-  **Agentless CNAPP** with a unified security graph correlating cloud infrastructure, workloads, identities, and code. Gartner reviewers highlight clear risk visualization, contextual prioritization, and quick onboarding across AWS, Azure, GCP, OCI, Alibaba Cloud, and Kubernetes . **Pricing**: Quote-only; enterprise contracts. **Free tier**: None. **Best for**: enterprises wanting agentless discovery with cross-cloud risk correlation—**trade-off**: reviewers note higher cost as environments scale and limited dashboard customization .
-
-
-
-- **[CrowdStrike Falcon](https://www.crowdstrike.com/)**
-
-  **Unified cloud-native security platform** combining endpoint, cloud, and identity protection. **Pricing**: Transparent per-device bundles from **$7.99/month** (Security Essentials) to **$19.99/month** (Advanced Protection); add-on modules for Identity Security and Next-Gen SIEM available . **Free tier**: None. **Best for**: organizations wanting endpoint and cloud security from a single platform with threat graph correlation—**trade-off**: cloud modules are add-ons; full CNAPP scope requires higher tiers.
-
-
-
-- **[Microsoft Defender for Cloud](https://azure.microsoft.com/en-us/products/defender-for-cloud)**
-
-  **Cloud-native protection** across Azure, other clouds, and on-premises. **Foundational CSPM is free**; workload protection plans are priced per resource: Containers at ¥0.096/vCore/hour, SQL on Azure at ¥0.2/Instance/hour, Storage at ¥20.35 per million transactions . **Free tier**: Yes, Foundational CSPM free. **Best for**: Azure-centric organizations wanting native cloud security with a free posture baseline—**trade-off**: workload protection costs scale with resource count.
-
-
-
-- **[Palo Alto Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud)**
-
-  **CNAPP with credit-based Enterprise Edition** covering code-to-cloud security. **Pricing**: Credit model with module bundles . **Free tier**: None. **Best for**: enterprises wanting comprehensive CNAPP within the Palo Alto ecosystem.
-
-
-
-- **[Datadog Cloud Security](https://www.datadoghq.com/)**
-
-  **Security posture within Datadog's observability platform**. Gartner reviewers value the unified platform—security, logs, and metrics in one place eliminates tool-switching during incidents—but note **complex and unpredictable pricing** and occasional dashboard query inaccuracies . **Pricing**: Consumption-based; complex model. **Free tier**: Limited. **Best for**: teams already on Datadog wanting security context alongside observability—**trade-off**: pricing opacity and bugs per reviewers .
-
-
-
-- **[SentinelOne Singularity](https://www.sentinelone.com/)**
-
-  **AI-native platform** with cloud workload protection. **Singularity Complete** at **$179.99/endpoint/year** includes cloud workload protection, AI security assistant, and 14-day data retention; **Commercial** at **$229.99/year** adds Identity Detection & Response and Managed Threat Hunting . **Free tier**: None. **Best for**: organizations wanting autonomous protection with transparent endpoint-based pricing—**trade-off**: cloud-specific modules may require higher tiers.
-
-
-
-- **[Sysdig Secure](https://sysdig.com/)**
-
-  **CNAPP with runtime insight** built on **Falco**, the open-source runtime security tool Sysdig created. Frost & Sullivan recognized Sysdig for container/K8s security leadership, noting Falco as the industry-standard runtime detection engine . **Pricing**: Agent-based per-container pricing with transparent model . **Free tier**: Trial available. **Best for**: teams wanting Falco-native runtime security with commercial support—**trade-off**: container-focused; broader CSPM may require additional tooling.
-
-
-
-- **[Lacework (FortiCNAPP)](https://www.lacework.com/)**
-
-  **AI-powered CNAPP** combining CWPP, CSPM, CIEM, and threat detection. Fortinet reports **75% reduction in compliance violations**, **100:1 alert-to-noise ratio**, and **80% faster investigations** for customers . **Pricing**: Quote-only. **Free tier**: None. **Best for**: organizations wanting consolidated CNAPP with behavioral anomaly detection—**trade-off**: integration into Fortinet ecosystem post-acquisition.
-
-
-
-- **[Orca Security](https://orca.security/)**
-
-  **Agentless CNAPP** using patented **SideScanning** for visibility across AWS, Azure, GCP, Oracle Cloud, Kubernetes, and serverless. Covers CSPM, CWPP, CIEM, DSPM, vulnerability management, malware detection, API security, and AI security in one platform . **Pricing**: Quote-only. **Free tier**: None. **Best for**: teams wanting agentless deployment with broad coverage across cloud providers .
-
-
-
-- **[Atlassian Guard](https://www.atlassian.com/software/guard)**
-
-  **Cloud security for Atlassian products** (Jira, Confluence, Bitbucket, Trello). **Premium** at **$8.18/user/month** adds proactive data loss prevention, suspicious activity detection, and threat response for Jira and Confluence Cloud . **Free tier**: Guard Standard included with Cloud Enterprise . **Best for**: Atlassian customers wanting native security controls for their Atlassian Cloud estate—**not** a general-purpose cloud threat detection platform.
-
-
+| Platform | Market Cap / Valuation | Starting Pricing | Free Tier / Trial Limits | Key Capabilities & Workload Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Defender for Cloud](https://azure.microsoft.com/en-us/products/defender-for-cloud)** | ~$3.9T *(Market Cap)* | **$4.906/server/month** (Defender for Servers Plan 1; pay-as-you-go per resource) | **Free indefinitely** (Foundational CSPM); 30-day free trial per enhanced workload protection plan | Native Azure/multicloud protection with agentless & agent-based vulnerability scanning, posture, and CWPP. |
+| **[Palo Alto Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud)** | ~$280B *(Market Cap)* | **~$18,000/year** (baseline 100 enterprise credit bundle; credit consumption model) | **30-day proof-of-concept / evaluation** via AWS Marketplace private offer or sales | Comprehensive code-to-cloud CNAPP covering CSPM, CWPP, CIEM, API security, and runtime defense. |
+| **[CrowdStrike Falcon](https://www.crowdstrike.com/)** | ~$250B *(Market Cap)* | **$7.99/device/month** (Falcon Go / Essentials baseline tier) | **15-day free trial** (unlimited access without credit card; 30-day pre-configured virtual Test Drive) | Unified platform combining endpoint security (EDR), cloud runtime workload security, and identity protection. |
+| **[FortiCNAPP (Lacework)](https://www.lacework.com/)** | ~$115B *(Fortinet Market Cap)* | **~$25,000/year** (baseline starter pack commitment via AWS Marketplace private offer) | **30-day evaluation trial** (or partner-led 14-day Cloud Security Assessment) | AI-powered CNAPP with behavioral anomaly detection, CIEM, CSPM, and workload threat monitoring. |
+| **[Datadog Cloud Security](https://www.datadoghq.com/)** | ~$85B *(Market Cap)* | **$10/host/month** (CSM Pro posture baseline, billed annually; $15/host/month for CWP) | **14-day free trial** with full platform telemetry, log ingestion, and posture checks | Unified security posture and runtime workload detection directly inside the Datadog observability suite. |
+| **[Atlassian Guard](https://www.atlassian.com/software/guard)** | ~$55B *(Market Cap)* | **$8.18/user/month** (Guard Premium tier; user-tier subscription) | **30-day free trial** across Jira, Confluence, and Bitbucket Cloud orgs | SaaS application security, threat detection, audit logging, and data loss prevention across Atlassian Cloud. |
+| **[Wiz](https://www.wiz.io/)** | ~$32B *(Acquisition / Valuation)* | **$24,000/year** (Wiz Essential baseline; 100-workload annual commitment block on AWS Marketplace) | **14-day free trial** with unlimited access to scan cloud accounts and generate security graph | Agentless CNAPP with unified security graph correlating multicloud infrastructure, workloads, identities, and code. |
+| **[SentinelOne Singularity](https://www.sentinelone.com/)** | ~$8.5B *(Market Cap)* | **$179.99/endpoint/year** (~$15/endpoint/month; Singularity Complete tier) | **30-day sales-guided Proof of Concept (PoC)** scoped to designated endpoints/workloads | Autonomous AI-native endpoint and cloud workload protection (CWPP) with 14-day telemetry retention. |
+| **[Sysdig Secure](https://sysdig.com/)** | ~$2.5B *(Private Valuation)* | **$72/host/month** (CNAPP Enterprise list tier, typically 20-host minimum commitment) | **30-day free trial** available via direct signup or AWS/GCP Marketplace | Runtime threat detection and container security built on Falco, integrated with posture and vulnerability tools. |
+| **[Orca Security](https://orca.security/)** | ~$1.8B *(Private Valuation)* | **$7,000/month** (~$84,000/year minimum starter workload tier on AWS Marketplace) | **30-day free trial** (risk-free assessment available on AWS Marketplace) | Agentless SideScanning CNAPP covering CSPM, CWPP, CIEM, DSPM, API security, and AI workload posture. |
 
 ## Open-Source GitHub Projects
 
