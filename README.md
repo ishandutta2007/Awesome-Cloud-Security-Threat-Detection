@@ -61,46 +61,53 @@ The global Cloud Security and Cloud-Native Application Protection Platform (CNAP
 
 ## Open-Source GitHub Projects
 
+Curated list of open-source tools for cloud security, runtime detection, CSPM, and posture enforcement, sorted by GitHub stars in descending order.
 
+- **[Trivy](https://github.com/aquasecurity/trivy)** [![GitHub stars](https://img.shields.io/github/stars/aquasecurity/trivy?style=social&color=white)](https://github.com/aquasecurity/trivy/stargazers)
+  **Comprehensive security scanner** (Apache 2.0) — Scans container images, file systems, Git repositories, virtual machine images, Kubernetes clusters, and AWS environments for known vulnerabilities (CVEs), IaC misconfigurations, sensitive secrets, and SBOM licenses. CI/CD native and developer-friendly. **Tech stack**: Go. **Deploy**: CLI, Docker, Kubernetes Operator. **Best for**: Shift-left security pipelines and pre-deployment vulnerability/IaC verification.
 
-- **[Falco](https://github.com/falcosecurity/falco)**
+- **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
+  **Unified open-source XDR & SIEM platform** (GPL 3.0) — Provides host and container-level threat detection, integrity monitoring (FIM), active incident response, and continuous compliance across endpoints, cloud instances (AWS, Azure, GCP), and containers. Correlates event data through an indexed search and visualization engine. **Tech stack**: C, Python, Go. **Deploy**: Self-hosted (manager, indexer, dashboard, and lightweight multi-platform endpoint agents). **Best for**: Teams seeking a unified self-hosted security monitoring and open SIEM solution.
 
-  **Cloud-native runtime security** (Apache 2.0, CNCF Graduated) — **the de facto standard for container and Kubernetes runtime threat detection** . **Features**: **eBPF-based** monitoring of system calls across hosts, containers, Kubernetes, and cloud services (via plugins for AWS CloudTrail, GitHub, Okta); **YAML rule engine** with out-of-the-box rules for container escapes, cryptojacking, reverse shells, and privilege escalation; **50+ integrations** for forwarding alerts to SIEM, Slack, and data lakes; streaming detection minimizes storage costs . **Tech stack**: C++, Go. **Deploy**: Self-hosted (DaemonSet on Kubernetes, Helm chart). **Trade-off**: **Runtime detection only**—no posture management, vulnerability scanning, or CIEM. Requires rule tuning. **Best for**: teams needing runtime threat detection for Kubernetes and containers—the foundation of the runtime layer in any open-source cloud security stack.
+- **[Prowler](https://github.com/prowler-cloud/prowler)** [![GitHub stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers)
+  **Multi-cloud security posture management (CSPM)** (Apache 2.0) — Industry standard open-source CSPM tool covering AWS, Azure, GCP, and Kubernetes. Features CLI scans, web UI (Prowler Local Server), and SDK support with hundreds of checks mapped to CIS Benchmarks, NIST, PCI-DSS, GDPR, HIPAA, SOC 2, and FedRAMP. **Tech stack**: Python. **Deploy**: Self-hosted (CLI, Docker, Local Server) or managed Prowler Cloud. **Best for**: Multi-cloud security posture audits, continuous compliance tracking, and CIS benchmark reporting.
 
+- **[Kubescape](https://github.com/kubescape/kubescape)** [![GitHub stars](https://img.shields.io/github/stars/kubescape/kubescape?style=social&color=white)](https://github.com/kubescape/kubescape/stargazers)
+  **Kubernetes open-source security platform** (Apache 2.0, CNCF Incubating) — Multi-faceted Kubernetes security suite providing posture management, risk analysis, image vulnerability scanning, RBAC visualization, and eBPF-based runtime anomaly detection directly within Kubernetes clusters. **Tech stack**: Go. **Deploy**: Self-hosted (CLI, Helm chart, cluster operator). **Best for**: Kubernetes-centric teams wanting unified posture and cluster security.
 
+- **[Falco](https://github.com/falcosecurity/falco)** [![GitHub stars](https://img.shields.io/github/stars/falcosecurity/falco?style=social&color=white)](https://github.com/falcosecurity/falco/stargazers)
+  **Cloud-native runtime threat detection** (Apache 2.0, CNCF Graduated) — The de facto standard for Linux, container, and Kubernetes runtime monitoring. Uses eBPF or kernel modules to parse kernel system calls in real time against a powerful YAML rule engine to catch privilege escalations, unexpected shells, namespace escapes, and cryptominers. **Tech stack**: C++, Go. **Deploy**: Self-hosted (DaemonSet on Kubernetes, Helm, systemd). **Best for**: High-performance, real-time runtime detection across production Kubernetes workloads.
 
-- **[Prowler](https://github.com/prowler-cloud/prowler)**
+- **[Checkov](https://github.com/bridgecrewio/checkov)** [![GitHub stars](https://img.shields.io/github/stars/bridgecrewio/checkov?style=social&color=white)](https://github.com/bridgecrewio/checkov/stargazers)
+  **Static code analysis for Infrastructure as Code (IaC)** (Apache 2.0) — Analyzes Terraform, CloudFormation, Kubernetes manifests, Helm charts, Dockerfiles, and Serverless framework templates for cloud configuration errors, security risks, and compliance breaches before provisioning. **Tech stack**: Python. **Deploy**: CLI, pre-commit hooks, GitHub Actions, CI/CD runners. **Best for**: Catching cloud misconfigurations in pull requests prior to cloud resource deployment.
 
-  **Open-source multi-cloud security posture management** (Apache 2.0) — **the most widely adopted open-source CSPM**. **Features**: **Prowler CLI** for security scans across all supported providers; **Prowler Local Server** (formerly Prowler App) for self-hosted web application and API to run scans and visualize findings; **Prowler Local Dashboard** for visualizing CLI CSV outputs; **Prowler SDK** powering CLI and server . Hundreds of checks mapped to CIS, NIST, PCI-DSS, GDPR, HIPAA, SOC 2, and FedRAMP. **Tech stack**: Python. **Deploy**: Self-hosted (CLI, Local Server, Docker) or Prowler Cloud. **Trade-off**: **CSPM only**—no runtime detection or workload protection. Findings are lists, not graph-correlated attack paths. **Best for**: security teams wanting production-ready open-source CSPM with broad compliance coverage.
+- **[Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian)** [![GitHub stars](https://img.shields.io/github/stars/cloud-custodian/cloud-custodian?style=social&color=white)](https://github.com/cloud-custodian/cloud-custodian/stargazers)
+  **Rules engine for cloud management and remediation** (Apache 2.0, CNCF Incubating) — Stateless, lightweight policy-as-code engine for AWS, Azure, and GCP. Allows writing simple YAML policies to enforce real-time compliance, cost optimization, garbage collection, and automated incident response (e.g., auto-remediating unencrypted storage buckets). **Tech stack**: Python. **Deploy**: Serverless functions (AWS Lambda, Azure Functions, Cloud Functions) or cron runners. **Best for**: Automated real-time posture policy enforcement and continuous remediation.
 
+- **[Tetragon](https://github.com/cilium/tetragon)** [![GitHub stars](https://img.shields.io/github/stars/cilium/tetragon?style=social&color=white)](https://github.com/cilium/tetragon/stargazers)
+  **eBPF-based security observability and real-time runtime enforcement** (Apache 2.0) — Provides deep kernel-level system visibility, network tracking, and security enforcement without modifying application code. Operates directly in kernel space to synchronously block or terminate malicious processes before system calls complete. **Tech stack**: Go, C (eBPF). **Deploy**: Kubernetes DaemonSet, Cilium plugin. **Best for**: Synchronous in-kernel attack blocking, container isolation, and execution telemetry.
 
+- **[Tracee](https://github.com/aquasecurity/tracee)** [![GitHub stars](https://img.shields.io/github/stars/aquasecurity/tracee?style=social&color=white)](https://github.com/aquasecurity/tracee/stargazers)
+  **Runtime security and system tracing using eBPF** (Apache 2.0) — Collects operating system events and system calls at high speeds, evaluating security signatures written in Go and Rego to detect behavioral indicators of attack (IoAs) including fileless malware execution and kernel exploit attempts. **Tech stack**: Go, C (eBPF). **Deploy**: Container, Kubernetes DaemonSet. **Best for**: Lightweight runtime event forensics and system behavioral tracing.
 
-- **[Magpie (OpenRaven)](https://github.com/openraven/magpie)**
+- **[Gatekeeper](https://github.com/open-policy-agent/gatekeeper)** [![GitHub stars](https://img.shields.io/github/stars/open-policy-agent/gatekeeper?style=social&color=white)](https://github.com/open-policy-agent/gatekeeper/stargazers)
+  **Policy-as-code admission controller for Kubernetes** (Apache 2.0, CNCF Graduated) — Integrates the Open Policy Agent (OPA) with Kubernetes admission webhooks to enforce granular policies and governance (e.g., blocking root containers, mandating labels, restricting host volumes) at cluster entry. **Tech stack**: Go. **Deploy**: Kubernetes controller / Helm chart. **Best for**: Admission-time guardrails and compliance governance for Kubernetes.
 
-  **Cloud Security Posture Manager (CSPM)** (Apache 2.0, ~188 stars) — **a lightweight alternative to Prowler** focused on modern cloud threats. **Features**: Security analysis for modern cloud stacks with focus on **emerging threats like cloud ransomware and supply chain attacks** . **Tech stack**: Java. **Deploy**: Self-hosted. **Trade-off**: **Smaller community than Prowler** (~188 stars vs. Prowler's thousands); last push ~10 months ago per metadata . **Best for**: teams wanting a focused CSPM with an emphasis on ransomware and supply-chain threat patterns—evaluate activity cadence before adoption.
+- **[Magpie (OpenRaven)](https://github.com/openraven/magpie)** [![GitHub stars](https://img.shields.io/github/stars/openraven/magpie?style=social&color=white)](https://github.com/openraven/magpie/stargazers)
+  **Cloud Security Posture Manager (CSPM)** (Apache 2.0) — Lightweight alternative CSPM focused on discovering modern cloud assets and identifying emerging risks such as cloud ransomware paths and supply chain vulnerabilities. **Tech stack**: Java. **Deploy**: Self-hosted CLI / containers. **Best for**: Teams seeking a lightweight cloud asset scanner tailored for ransomware posture assessments.
 
+- **[container-runtime-security](https://github.com/aiagentmackenzie-lang/container-runtime-security)** [![GitHub stars](https://img.shields.io/github/stars/aiagentmackenzie-lang/container-runtime-security?style=social&color=white)](https://github.com/aiagentmackenzie-lang/container-runtime-security/stargazers)
+  **eBPF-based container runtime security monitoring & enforcement** — Feature-complete open-source runtime enforcement engine with 30 detection rules across 9 threat categories, TC-based network blocking, multi-signal correlation, and AI-assisted triage at ~73k events/sec throughput. **Tech stack**: Go, C (eBPF). **Deploy**: Kubernetes DaemonSet. **Best for**: Teams researching eBPF-native active enforcement and AI-augmented alert triage.
 
+### Building a Composable Open-Source Cloud Security Stack
 
-- **[container-runtime-security](https://github.com/aiagentmackenzie-lang/container-runtime-security)**
-
-  **eBPF-based container runtime security monitoring and enforcement** (license per repo) — **the most feature-complete open-source runtime enforcement project** with AI triage. **Features**: **30 detection rules** across 9 categories (Container Escape, Cryptojacking, Reverse Shell, Credential Access, Privilege Escalation, Container Drift, Network Anomaly, Process Injection, Known CVE); **7-rule enforcement safety protocol** with TC-based network blocking; **multi-signal correlation** (shell→network, DNS+TLS); **AI triage** via gRPC (advisory); **~73k events/sec** single-core throughput . **Tech stack**: Go, C (eBPF). **Deploy**: Self-hosted (Kubernetes). **Trade-off**: **eBPF kernel load/attach path code-complete but pending Linux runtime verification** (Phase C); AI triage degrades to neutral . Newer project with limited community validation. **Best for**: teams wanting eBPF-native enforcement (not just detection) with AI-assisted triage—willing to validate the runtime path before production use.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Trivy** — Comprehensive scanner (Apache 2.0). Vulnerability, IaC, secrets, and SBOM scanning; CI/CD native. **Note**: Scanner only—pair with Falco for runtime and Prowler for posture. **Best for**: shift-left security in CI/CD pipelines.
-
-- **Tetragon** — eBPF-native runtime security from Isovalent (Apache 2.0). In-kernel enforcement can kill processes before syscalls complete. **Note**: Runtime enforcement only—no posture or CSPM. **Best for**: teams wanting enforcement alongside Falco's detection.
-
-- **Kubescape** — Kubernetes security platform (Apache 2.0, CNCF incubating). Posture, vulnerability, and runtime for K8s clusters. **Note**: Kubernetes-only—not multi-cloud CSPM. **Best for**: teams wanting a single tool for Kubernetes security.
-
-
-
-**Frameworks for building custom systems**: Combine **Falco** for runtime detection with **Prowler** or **Magpie** for CSPM, **container-runtime-security** for eBPF enforcement, and **Trivy** for shift-left scanning—creating a composable open-source cloud security stack. **None of these match Wiz's unified graph or CrowdStrike's threat intelligence correlation**; those require commercial platforms or significant integration engineering.
-
+While commercial CNAPP platforms (such as Wiz, Defender for Cloud, and CrowdStrike) provide a unified graph tying together posture, runtime, and identity, you can assemble a powerful self-hosted alternative by composing complementary open-source layers:
+- **Shift-Left & Pre-deployment**: [Trivy](https://github.com/aquasecurity/trivy) (vulnerabilities & secrets) + [Checkov](https://github.com/bridgecrewio/checkov) (IaC static analysis).
+- **Multi-Cloud Posture & Compliance**: [Prowler](https://github.com/prowler-cloud/prowler) (CIS benchmarks & audits) + [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) (automated posture policy enforcement).
+- **Cluster Governance**: [Gatekeeper](https://github.com/open-policy-agent/gatekeeper) + [Kubescape](https://github.com/kubescape/kubescape).
+- **Runtime Threat Detection**: [Falco](https://github.com/falcosecurity/falco) + [Tracee](https://github.com/aquasecurity/tracee).
+- **In-Kernel Enforcement**: [Tetragon](https://github.com/cilium/tetragon) + [container-runtime-security](https://github.com/aiagentmackenzie-lang/container-runtime-security).
+- **Unified SIEM / Event Correlation**: [Wazuh](https://github.com/wazuh/wazuh).
 
 
 ## How to Contribute
